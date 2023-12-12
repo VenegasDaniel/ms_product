@@ -1,3 +1,3 @@
 export class CheckProductDto {
-    id: string
+    name: string;
 }

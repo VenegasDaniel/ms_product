@@ -1,9 +1,9 @@
 export class CreateProductDto {
 
-    day: string;
-    date: Date;
-    hourStart: string;
-    hourEnd: string;
-    type: string;
+    name: string;
+    description: string;
+    category: string;
+    price: number;
+    image: string;
     
 }
