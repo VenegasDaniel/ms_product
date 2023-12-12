@@ -29,6 +29,12 @@ const TestConfig: DataSourceOptions = {
     synchronize: true,
     logging: false,
     migrations: [__dirname + '/../test/migrations/*{.js,.ts}'],
+    extra: {
+        ssl:{
+            rejectUnauthorized: false
+        
+        },
+    },
 }
 
 class DataSourceFactory {
