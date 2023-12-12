@@ -13,12 +13,12 @@ export class ProductsController {
     return this.ProductsService.create(createProductDto);
   }
 
-  @Get('findAll')
+  @Get()
   async findAll() {
     return this.ProductsService.findAll();
   }
 
-  @Get(':id')
+  @Get()
   findOne(@Param('id') id: string) {
     return this.ProductsService.findOne(+id);
   }
