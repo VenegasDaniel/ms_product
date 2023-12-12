@@ -9,21 +9,18 @@ export class Product {
     id: string;
 
     @Column()
-    type: string;
+    name: string;
 
     @Column()
-    day: string;
+    description: string;
 
-    @CreateDateColumn({ type: 'date' })
-    date: Date;
+    @Column()
+    category: string;
 
-    @Column({ type: 'time'})
-    hourStart: string;
+    @Column()
+    price: number;
 
-    @Column({ type: 'time'})
-    hourEnd: string;
-
-    @Column('boolean', {default: false})
-    state: boolean;
+    @Column()
+    image: string;
 
 }
